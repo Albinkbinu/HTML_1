@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="25" required><br><br>
+
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="test@example.com" required autofocus><br><br>
+
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+            <option value="freelancer" selected>Freelancer</option>
+        </select><br><br>
+
+        
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required><br><br>
+
+
+        <label for="tickets">Tickets:</label>
+        <input type="radio" id="ticket-1" name="tickets" value="1">1 Ticket
+        <input type="radio" id="ticket-2" name="tickets" value="2" checked>2 Tickets
+        <input type="radio" id="ticket-3" name="tickets" value="3">3 Tickets<br><br>
+
+        
+        <label for="payment"> Online Payment:</label>
+        <input type="checkbox" id="payment" name="payment">Online Payment<br><br>
+
+        
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes" placeholder="Enter notes here"></textarea><br><br>
+
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
